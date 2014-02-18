@@ -2,11 +2,13 @@ html, body {
 		background-color: #FC0;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 h1 {
 	font-family: arial;
-	font-size: 72px;
+	font-size: 400px;
+	line-height: 300px;
 }
 
 a {
@@ -32,7 +34,7 @@ p {
 .overlay {
 	position: absolute;
 	left: 200px;
-	top: 20px;
+	top: 130px;
 	padding: 20px;
 	height: 200px;
 	width: 700px;
