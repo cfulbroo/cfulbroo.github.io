@@ -1,9 +1,35 @@
+html, body {
+		background-color: #FC0;
+	margin: 0;
+	padding: 0;
+}
+
 h1 {
 	font-family: arial;
 	font-size: 72px;
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
 }
 
 p {
 	font-family: arial;
 	font-size: 14px;
 }
+.overlay {
+	position: absolute;
+	left: 200px;
+	top: 40px;
+	padding: 20px;
+	height: 200px;
+	width: 700px;
+	background-image: url('images/background-white.png');
+	background-repeat: repeat;
+}
+

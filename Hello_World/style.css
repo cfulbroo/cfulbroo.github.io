@@ -10,3 +10,11 @@ h1 {
 	background-color: yellow;
 	font-weight: bold;
 }
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	height: 400px;
+	width: 800px;
+	overflow: hidden;
+}
