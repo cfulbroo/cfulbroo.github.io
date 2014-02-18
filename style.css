@@ -22,10 +22,17 @@ p {
 	font-family: arial;
 	font-size: 14px;
 }
+
+.pulled-left {
+	position: relative;
+	left: -20px;
+	top: -33px;
+}
+
 .overlay {
 	position: absolute;
 	left: 200px;
-	top: 40px;
+	top: 20px;
 	padding: 20px;
 	height: 200px;
 	width: 700px;

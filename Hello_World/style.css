@@ -14,7 +14,6 @@ h1 {
 .centered {
 	margin-left: auto;
 	margin-right: auto;
-	height: 400px;
+	height: 450px;
 	width: 800px;
-	overflow: hidden;
 }
