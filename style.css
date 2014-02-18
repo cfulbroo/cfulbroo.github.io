@@ -1,5 +1,5 @@
 html, body {
-		background-color: #FC0;
+		background-color: #3284cb;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -27,8 +27,8 @@ p {
 
 .pulled-left {
 	position: relative;
-	left: -20px;
-	top: -33px;
+	left: -60px;
+	top: -73px;
 }
 
 .overlay {
