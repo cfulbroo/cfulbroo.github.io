@@ -1,0 +1,12 @@
+html, body {
+	background-color: #FC0;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: times;
+	font-size: 89px;
+	background-color: yellow;
+	font-weight: bold;
+}
