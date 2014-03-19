@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			}
+		.hovered {
+			background-color: green;
+		}
+		.border {
+			border: solid thin black;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript">
+		/* var name = "Andrew";
+		var age = 18;
+
+		name = "Andrew LeClair";
+
+		var sayMyName = function() {
+			alert(name);
+		};
+
+		if (age == 18) { //two = marks checks that the statement is true
+			alert("you can vote");
+		} 
+		else {
+
+		}
+
+		for(var i = 0; i < 100; i++) { // ++ means add one to it; -- means subtract one
+			for(var j = 0; j < 3; j++) {
+				}
+			}
+			
+		while (numberOfClicks < 100){
+			sayMyName ();
+		} */
+
+		$(function() { // the dollar sign is the jquery function symbol
+			$(".box").click(function() {
+				alert("You click a box yo.");
+				$(this).fadeOut(1000).fadeIn(1000);
+			});
+
+			$(".box").hover(function() {
+				//hover on
+				$(this).addClass("hovered border"); //this adds a css class to whenever the item gets hovered over
+			}, function() {
+				//hover off
+				$(this).removeClass("hovered border");
+			});
+
+			$(".box").html("<h1>Box</h1>");
+
+			for(var i=0; i < 1000; i++) {
+			$("body").append("<div class='box'></div>");
+				}
+
+		});
+
+
+
+	</script>
+
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+
+</body>
+</html>

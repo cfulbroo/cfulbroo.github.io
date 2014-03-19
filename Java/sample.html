@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#wrapper {
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			top: 300px;
+			right: -10px;
+		}
+		#game {
+			background-image: url(images/images.jpg);
+			background-repeat: no-repeat;
+			width: 300px;
+			height: 300px;
+		}
+		h1 {
+			font-family: sans-serif;
+			font-size: 18px;
+			color: red;
+		}
+		.box {
+			background-color: red;
+			width: 50px;
+			height: 50px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			float: left;
+			cursor: pointer;
+		}
+		.hovered {
+			background-color: 
+		}
+		.question {
+			font-family: sans-serif;
+			font-size: 32px;
+			text-align: center;
+			padding-top: 8px;
+			color: #fa7878;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript">
+		// while (numberOfClicks < 9){	
+			$(function() { 
+				$(".box").click(function() {
+					$(this).fadeTo(2000, 0);
+				});
+
+				$(".box").hover(function() {
+					//hover on
+					$(this).addClass("hovered");
+				}, function() {
+					//hover off
+					$(this).removeClass("hovered");
+				});
+
+				$(".box").html("<div class='question'>?</div>");
+
+				// for(var i=0; i < 24; i++) {
+				// $("#game").append("<div class='box'></div>");
+				// 	}
+
+			});
+		// }
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1>You have eight clicks!<br />Find three pairs!</h1>
+		<div id="game">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+		</div><!--end game-->
+	</div><!--end wrapper-->
+</body>
+
+</html>
